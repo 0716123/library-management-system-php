@@ -1,0 +1,181 @@
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins",sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url('wp2508260.webp') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  width: 450px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+
+form{
+  margin:0 2rem;
+}
+
+.form-title{
+  font-size:1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding:1.3rem;
+  margin-bottom:0.4rem;
+}
+input{
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 35px;
+}
+.input-group{
+  
+ position: relative;
+  margin-bottom: 20px;
+}
+.input-group i{
+  position: absolute;
+  left: 5px;
+  bottom: 10px;
+  color: black;
+}
+input:focus{
+  background-color: transparent;
+  outline: transparent;
+  border-bottom: 2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+  color: transparent;
+}
+label{
+  color: #757575;
+  position: absolute;
+  left:20px;
+  top: 50%;
+  transition: 0.3s;
+  transform: translateY(-50%);
+  padding:0 5px;
+  font-size: 14px;
+  pointer-events: none;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+ opacity:0;
+  top: 50%;
+  bottom:50;
+  left:x;
+  color: hsl(190.52deg 38.1% 48.47%);
+  font-size: 12px;
+  visibility: hidden;
+}
+.recover{
+  text-align: right;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.recover a{
+  text-decoration: none;
+  color: rgb(0, 0, 148);
+}
+.recover a:hover{
+  color: rgb(197, 197, 215);
+  text-decoration: ;
+  
+}
+.btn
+{
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: rgb(39, 68, 68);
+  color: white;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.btn:hover{
+  background-color: #3c6f78; 
+}
+.or{
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.icons{
+  text-align: center;
+}
+.icons i{
+  color: rgb(176, 209, 209);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #dfe9f5;
+  margin:0 15px;
+  transition: 1s;
+}
+.icons i:hover{
+  background: #00171f;
+  font-size: 1.6rem;
+  border: 2px solid rgb(125,125,235);
+
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4rem;
+  margin-top: 0.10rem;
+  font-weight: bold;
+  font-size:medium ;
+  margin-top:30px;
+}
+button{
+  color: rgb(205, 213, 215);
+  
+  background-color: transparent;
+  font-size: 0.80rem;
+  font-weight: bold;
+  /*box-shadow: 0  0 10px rgb(56, 180, 180);*/
+  
+}
+button:hover{
+  text-decoration: ;
+  color:rgb(88, 179, 191);
+  
+} 
+
+.signin-button {
+  background: none;
+  border: none;
+  color: #fff; /* Or your desired color */
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+  text-decoration: underline;
+  box-shadow: none;
+}
+.signin-button:hover {
+  color: #00ffff; /* Optional hover effect */
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Floor Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .floor-buttons {
+            margin-bottom: 20px;
+        }
+        .floor-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .floor-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .floor-info {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .floor-info img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .floor-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .floor-box {
+            flex: 1 1 calc(50% - 10px);
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .floor-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Library Floor Plan</h1>
+    <div class="floor-buttons">
+        <button onclick="showFloor('ground')">Ground Floor</button>
+        <button onclick="showFloor('first')">First Floor</button>
+        <button onclick="showFloor('second')">Second Floor</button>
+    </div>
+    <div class="floor-info" id="floor-info">
+        <h2 id="floor-title">Ground Floor</h2>
+        <p><strong>What's on this floor?</strong></p>
+        <div class="floor-boxes" id="floor-boxes"></div>
+        <img id="floor-image" src="https://library.atmiyauni.ac.in/cdn/images/floor-plan/ground.png" alt="Ground Floor">
+    </div>
+
+    <script>
+        const floorData = {
+            'ground': {
+                title: 'Ground Floor',
+                details: [
+                    'MCA, MBA Collection of Books',
+                    'Staff Reading Room',
+                    'General Reading Room',
+                    'Reprography Section',
+                    'Periodical Section',
+                    'Reference Section',
+                    'Reading Area'
+                ],
+                image: 'https://library.atmiyauni.ac.in/cdn/images/floor-plan/ground.png'
+            },
+            'first': {
+                title: 'First Floor',
+                details: [
+                    'Engineering Collection',
+                    'Diploma Collection',
+                    'E-Library',
+                    'Technical Processing Room',
+                    'Circulation Counter',
+                    'Librarians Chamber',
+                    'Newspaper Reading Section',
+                    'Property Counter',
+                    'Reading Area'
+                ],
+                image: 'https://library.atmiyauni.ac.in/cdn/images/floor-plan/first.png'
+            },
+            'second': {
+                title: 'Second Floor',
+                details: [
+                    'General Reading Section',
+                    'Staff Reading Room',
+                    'Group Study Rooms (6)',
+                    'Individual Study Carrels',
+                    'Book Shop',
+                    'Coffee Shop',
+                    'Exhibition Hall',
+                    'Reprography Section',
+                    'Periodical Section',
+                    'Reference Section',
+                    'Reading Area'
+                ],
+                image: 'https://library.atmiyauni.ac.in/cdn/images/floor-plan/second.png'
+            }
+        };
+
+        function showFloor(floor) {
+            document.getElementById('floor-title').innerText = floorData[floor].title;
+            document.getElementById('floor-boxes').innerHTML = floorData[floor].details.map(item => `<div class="floor-box">${item}</div>`).join('');
+            document.getElementById('floor-image').src = floorData[floor].image;
+            document.getElementById('floor-image').alt = floorData[floor].title;
+        }
+    </script>
+</body>
+</html>

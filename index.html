@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD BOOK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Library</div>
+    <ul>
+      <li><a href="index.html">Add Book</a></li>
+      <li><a href="index11.html">Home</a></li>
+      <li><a href="index11.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- Book Form -->
+  <div class="container">
+    <h1 class="form-title">ADD BOOKS</h1>
+    <form method="post" action="books.php">
+      <input type="text" name="bname" placeholder="Book Name" required>
+      <input type="text" name="aname" placeholder="Author Name" required>
+      <input type="number" name="price" placeholder="Price" required>
+      <input type="text" name="bno" placeholder="Book No" required>
+      <input type="submit" class="btn" value="ADD" name="ADD">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

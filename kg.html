@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library and Learning Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HEADER */
+    .header {
+      background-color: #002244;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .nav-buttons {
+      margin-top: 10px;
+    }
+
+    .nav-buttons button {
+      background-color: white;
+      color: #002244;
+      border: none;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .search-bar input[type="text"] {
+      width: 60%;
+      max-width: 500px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #ffc107;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submenu {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .submenu button {
+      padding: 6px 12px;
+      border: none;
+      background-color: white;
+      color: #222;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #1c1540;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 14px;
+    }
+
+    .footer div {
+      margin: 10px;
+    }
+
+    .footer h4 {
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .search-bar input[type="text"] {
+        width: 90%;
+      }
+
+      .nav-buttons, .submenu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-buttons button, .submenu button {
+        width: 80%;
+        margin: 5px 0;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Library and Learning Center</h1>
+
+    <div class="nav-buttons">
+      <button>Home</button>
+      <button>About Us</button>
+      <button>Services</button>
+      <button>Facility</button>
+      <button>Contact Us</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Search for books by Title, Keywords, Author etc.">
+      <button>Search</button>
+    </div>
+
+    <div class="submenu">
+      <button>Books</button>
+      <button>Category</button>
+      <button>Author</button>
+      <button>Issue Book</button>
+      <button>Sign Up</button>
+      <button style="background: #6c63ff; color: white;">Admin</button>
+    </div>
+  </div>
+
+  <!-- You can add your main content here -->
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>
+      <h4>Facilities</h4>
+      <p>Book Shop</p>
+      <p>Digital Library</p>
+      <p>Media Library</p>
+      <p>Video Conference/Webinars</p>
+      <p>Virtual Tour</p>
+    </div>
+
+    <div>
+      <h4>Contact Details</h4>
+      <p>Library and Learning Center</p>
+      <p>Atmiya University<br>Rajkot, Gujarat</p>
+      <p>Phone: +91 02812563445/1212</p>
+      <p>Email: librarian@atmiyauni.ac.in</p>
+      <p>Address: Kalawad Road, Rajkot-360005</p>
+    </div>
+
+    <div>
+      <h4>Developed By</h4>
+      <p>Kalpesh Ghediya (B.C.A 4th Sem)</p>
+      <p>Ravat Dharmik (B.C.A 2nd Sem)</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
